@@ -7,11 +7,12 @@
     ```bash
     mkdir my-docker-app
     cd my-docker-app
+    mkdir src
     ```
 
     </br>
 
-2. Φτιάξε το αρχείο Dockerfile (στον ίδιο φάκελο, δημιούργησε ένα αρχείο  με όνομα Dockerfile) και γράψε ότι αναφέρεται στο αρχείο Dockerfile του παρόντος φακέλου.
+2. Φτιάξε το αρχείο Dockerfile (στον  φάκελο src, δημιούργησε ένα αρχείο  με όνομα Dockerfile) και γράψε ότι αναφέρεται στο αρχείο Dockerfile του παρόντος φακέλου.
 
 </br>
 
