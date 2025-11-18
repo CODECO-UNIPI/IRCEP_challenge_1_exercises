@@ -2,19 +2,16 @@
 
 1. Άνοιξε ένα terminal και γράψε:
 
-    </br>
-
     ```bash
     mkdir my-docker-app
     cd my-docker-app
     mkdir src
     ```
 
-    </br>
+2. Φτιάξε το αρχείο Dockerfile (στον φάκελο **src**, δημιούργησε ένα αρχείο με όνομα **Dockerfile**)  
+   και γράψε ό,τι αναφέρεται στο αρχείο Dockerfile του παρόντος φακέλου.
 
-2. Φτιάξε το αρχείο Dockerfile (στον  φάκελο src, δημιούργησε ένα αρχείο  με όνομα Dockerfile) και γράψε ότι αναφέρεται στο αρχείο Dockerfile του παρόντος φακέλου.
-
-</br>
+---
 
 3. Δημιούργησε το Docker image, εκτελώντας την εντολή:
 
@@ -22,7 +19,7 @@
     docker build -t my-hello-image .
     ```
 
-</br>
+---
 
 4. Τρέξε το container από το image:
 
@@ -30,7 +27,24 @@
     docker run my-hello-image
     ```
 
-</br>
+---
+
+5. Θα δεις στο τερματικό:
+
+    ```bash
+    Hello from my custom Docker image!
+    ```
+
+---
+
+### (Προαιρετικά) Δες τα images σου:
+
+(Εκτέλεσε στο terminal)
+
+```bash
+docker images
+```
+
 
 5. Θα δεις στο τερματικό:
 
@@ -42,15 +56,7 @@
 
 **(Προαιρετικά) Δες τα images σου:**
 
-</br>
 
-    
-    Hello from my custom Docker image!
-    
-
-</br>
-
-Θα δείς κάτι σαν:
 
 </br>
 
