@@ -1,25 +1,59 @@
 # Οδηγίες
 
-Άνοιξε ένα terminal και γράψε:
+1. Άνοιξε ένα terminal και γράψε:
 
-Φτιάξε ένα αρχείο Python (`app.py`).
+    </br>
 
-Φτιάξε το αρχείο `Dockerfile` (σε φάκελο με ονομασια src, δημιούργησε ένα αρχείο
-με όνομα `Dockerfile`) και γράψε τις οδηγίες που αναφέρονται στο Dockerfile αρχείο.
+    ```bash
+    mkdir my-docker-app
+    cd my-docker-app
+    ```
 
+    </br>
 
----
+2. Φτιάξε το αρχείο Dockerfile (στον ίδιο φάκελο, δημιούργησε ένα αρχείο  με όνομα Dockerfile) και γράψε ότι αναφέρεται στο αρχείο Dockerfile του παρόντος φακέλου.
 
-## Δημιουργία και εκτέλεση Docker Image & Container
+</br>
 
-Δημιούργησε το Docker image, εκτελώντας την εντολή:
+3. Δημιούργησε το Docker image, εκτελώντας την εντολή:
 
-docker build -t myapp:latest .
+    ```bash
+    docker build -t my-hello-image .
+    ```
 
+</br>
 
----
+4. Τρέξε το container από το image:
 
-## (Προαιρετικά) Δες τα images σου:
+    ```bash
+    docker run my-hello-image
+    ```
 
-docker images
+</br>
 
+5. Θα δεις στο τερματικό:
+
+    ```bash
+    Hello from my custom Docker image!
+    ```
+
+</br>
+
+**(Προαιρετικά) Δες τα images σου:**
+
+</br>
+
+    
+    Hello from my custom Docker image!
+    
+
+</br>
+
+Θα δείς κάτι σαν:
+
+</br>
+
+```
+REPOSITORY        TAG       IMAGE ID       CREATED          SIZE
+my-hello-image    latest    a1b2c3d4e5f6   1 minute ago     120MB
+```
