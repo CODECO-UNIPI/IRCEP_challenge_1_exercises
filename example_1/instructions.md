@@ -32,11 +32,11 @@
 
 ### (Προαιρετικά) Δες τα images σου:
 
-(Εκτέλεσε στο terminal)
+    (Εκτέλεσε στο terminal)
 
-```bash
-docker images
-```
+    ```bash
+    docker images
+    ```
 
 
 5. Θα δεις στο τερματικό:
