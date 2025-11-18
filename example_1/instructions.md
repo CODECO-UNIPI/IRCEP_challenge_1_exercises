@@ -34,7 +34,7 @@
 
 (Εκτέλεσε στο terminal)
 
-    ```bash
+    ```
     docker images
     ```
 
