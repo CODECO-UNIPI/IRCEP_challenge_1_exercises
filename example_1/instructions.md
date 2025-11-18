@@ -34,9 +34,9 @@
 
 (Εκτέλεσε στο terminal)
 
-    ```
-    docker images
-    ```
+```
+docker images
+```
 
 
 5. Θα δεις στο τερματικό:
