@@ -27,13 +27,6 @@
     docker run my-hello-image
     ```
 
----
-
-5. Θα δεις στο τερματικό:
-
-    ```bash
-    Hello from my custom Docker image!
-    ```
 
 ---
 
