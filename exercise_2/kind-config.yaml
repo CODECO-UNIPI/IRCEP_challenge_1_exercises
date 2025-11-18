@@ -1,0 +1,47 @@
+# kind-config.yaml
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+
+nodes:
+  - role: control-plane
+    labels:
+      node-type: "control"
+      region: "central"
+      zone: "central-1"
+      environment: "cluster-management"
+
+  - role: worker
+    labels:
+      node-type: "edge-node"
+      region: "europe"
+      zone: "eu-west-edge"
+      edge-site: "factory-A"
+      device-class: "micro-server"
+      cpu-class: "low"
+      memory-tier: "medium"
+      network-latency: "low"
+      power-source: "mains"
+
+  - role: worker
+    labels:
+      node-type: "edge-node"
+      region: "europe"
+      zone: "eu-south-edge"
+      edge-site: "retail-store-22"
+      device-class: "edge-gateway"
+      cpu-class: "medium"
+      memory-tier: "low"
+      network-latency: "medium"
+      power-source: "battery"
+
+  - role: worker
+    labels:
+      node-type: "edge-node"
+      region: "us"
+      zone: "us-east-edge"
+      edge-site: "warehouse-4"
+      device-class: "micro-server"
+      cpu-class: "high"
+      memory-tier: "high"
+      network-latency: "low"
+      power-source: "mains"
