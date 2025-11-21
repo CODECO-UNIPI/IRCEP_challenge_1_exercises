@@ -1,19 +1,21 @@
-# deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-python-app
+  name: counter-deployment
 spec:
-  replicas: 1
+  replicas: 1  # Number of replicas (pods) you want to run
   selector:
     matchLabels:
-      app: my-python-app
+      app: counter
   template:
     metadata:
       labels:
-        app: my-python-app
+        app: counter
     spec:
       containers:
-        - name: my-python-app
-          image: <repo-name>/my-python-app:latest
-          imagePullPolicy: IfNotPresent
+        - name: counter-container
+          image: your-docker-username/counter-app:latest  # Replace with your image name
+          imagePullPolicy: Always  # Always pull the image to ensure the latest version is used
+          ports:
+            - containerPort: 80  # Optional: If your app exposes any ports (not needed for this script)
+      restartPolicy: Always  # Restart the container if it fails

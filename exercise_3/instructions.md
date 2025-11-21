@@ -1,7 +1,7 @@
 # Άσκηση 3 : Docker and K8s KinD Cluster
 
 ## Περιγραφή:
-Να κάνετε deployment την containerized εφαρμογή που υλοποιήσατε στην Άσκηση 1, στο KinD cluster που δημιουργήσατε στην Άσκηση 2.
+Να κάνετε deployment μια containerized εφαρμογή, στο KinD cluster που δημιουργήσατε στην Άσκηση 2.
 
 ## Οδηγίες
 
@@ -20,6 +20,6 @@
     ```
 
 4. Επιτυχής εκτέλεση όταν:
-    a. Εμφανίζεται ένα Pod με όνομα που ξεκινά με my-python-app-*
+    a. Εμφανίζεται ένα Pod με όνομα που ξεκινά με counter-deployment-*
     b. Η στήλη STATUS δείχνει Running or Terminating
     c. Δεν υπάρχουν CrashLoopBackOff, ImagePullBackOff ή Error
